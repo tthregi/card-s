@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+    background-color: rgb(74, 104, 221);
+    padding: 25px;
+    background-color: rgb(74, 104, 221);
+    color: black;
+    font-size: 25px;}
+
+      
+.dark-mode {
+background-color: black;
+color:rgb(0, 0, 0);
+}
+#ej{
+    margin-left: 50%;
+    margin-top: 10px;
+    float: left;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(6, 48, 219);
+    padding: 30px 0;
+    border: 5px solid black; 
+}
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none
+}
+ul li a{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin:0 25px ;
+    color: #262626;
+    font-size:30px ;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    padding: 5px 10px;
+    color: white;
+}
+ul li a:hover{
+    color: #fff;
+    background: #00ff00 ;
+}
+ul li a:before{
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #00ff00;
+    border-width: 0 0 3px 3px;
+    transition: .5s;
+    opacity: 0;
+}
+ul li a:hover:before{
+    bottom: -8px;
+    left: -8px;
+    opacity: 1;
+
+}
+ul li a:after{
+    content:'' ;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #00ff00;
+    border-width: 3px 3px 0 0;
+    transition: .5s;
+    opacity: 0;
+
+}
+ul li a:hover:after{
+    top: -8px;
+    right: -8px;
+    opacity: 1
+    ;
+}
+.cards{
+    background-color: rgb(74, 104, 221);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*középre ( vizszintesen) */
+    align-items: center;     /*fuggolegesen kozepre */
+    height: 700px;
+    border: 10px black;
+
+
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    height: 70%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 black;
+
+}
+h3{
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px ;
+    text-align: left;
+
+}
+
+h4{
+    text-align: center;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.kep{
+    height: 200px;
+    width: 100%;
+    
+    
+}
+button{
+    background-color: rgb(137, 126, 255);
+    font-size: 10px;
+    margin-bottom: 19px;
+    
+}
+.gomb{
+    display: inline-block;
+    margin-right: 10px; 
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid black;
+    
+}
+.gomb:hover{
+    background-color:#5043ff
+}
+#g{
+    background-color: green;
+}
+
+
+/* POPUP CHAT */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+#textarea{
+    width: 90%;
+}
+h1{
+    font-family: 'Comfortaa', cursive;;
+    text-shadow:
+    -2px -2px 0 #000000, 
+    2px -2px 0 #000000, 
+    -2px 2px 0 #000, 
+    2px 2px 0 #000;
+    color:rgb(46, 89, 230) ;
+    
+}
+b{
+    font-family: 'Comfortaa', cursive;;
+    text-shadow:
+    -2px -2px 0 #000000, 
+    2px -2px 0 #000000, 
+    -2px 2px 0 #000, 
+    2px 2px 0 #000;
+    color: #04AA6D;
+}
+.form-container{
+    background-color: #05269d;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+.toast{
+    background-color: whitesmoke;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    border: 4px solid rgb(8, 3, 137);
+    border-radius: 100px;
+}
+body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url("kepek/pedro.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+

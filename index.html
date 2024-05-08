@@ -1,0 +1,113 @@
+<!-- 
+   RDW=RESPONSIVE, WEB, DESIGN 
+intendalas=shift+alt+F
+sortores= Alt+Z
+wrap
+ -->
+
+
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TR munkái</title>
+    <link rel="shortcut icon" href="kepek/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stilus.css">
+</head>
+
+<body>
+    
+
+
+
+<div class="menu">
+    <ul>
+        <li><a href="https://sites.google.com/view/my-tasks-tr/web">WEB</a></li>
+        <li><a href="https://sites.google.com/view/my-tasks-tr/projekt">PROJEKT</a></li>
+        <li><a href="https://sites.google.com/view/my-tasks-tr/ita">ITA</a></li>
+        <li><a href="https://sites.google.com/view/my-tasks-tr/digikult">DIGIKULT</a></li>
+        <li><a href="https://sites.google.com/view/my-tasks-tr/python">PYTHON</a></li>
+    </ul>
+
+</div>
+
+    <div class="cards">
+        <div class="card">
+            <img class="kep" src="kepek/bi.png" alt="0">
+            <button id="g">Alapvizsga proba</button>
+            <h3 style="font-size:2vw;">Braille-írás</h3>
+            <H4  ></H4>
+            <a  class="gomb" href="https://tthregi.github.io/braille-iras/">Az oldal</a>
+            
+        </div>
+        <div class="card">
+            <img class="kep" src="kepek/pedro.jpg" alt="0">
+            <button>Események</button>
+            <h3 style="font-size:2vw;">MI A CÉLTUDATOS ÉLET SZÁMOMRA ? OKT.31-TŐL</h3>
+            <h4>Szeretnéd megtartani a téli sötétségben is a kreativitásod és...</h4> 
+            <a class="gomb"  href="https://www.youtube.com/watch?v=F2YpXC1itEE">VIDEO</a>             
+            
+            
+        </div>
+        <div class="card">
+            <img class="kep" src="kepek/rakun.jpg" alt=""> 
+            <button>Ajánlatok</button>
+            <h3 style="font-size:2vw;">  akis és nagy csapathoz illő privát irodák a kaptárban!</h3>
+            <h4>Itt az új év, bővült a csapatod és kezditek kinőni az eddigi irodátokat?</h4>
+           <a class="gomb" href="#">Tovább</a>
+           
+           
+        </div>
+
+    </div><button id="ej" onclick="myFunction()">Éjszakai mód</button>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}</script>
+
+<div class="parallax"></div>
+
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Chat</h1>
+      
+          <label for="msg"><b>Üzenet</b></label>
+          <textarea id="textarea" placeholder="Írj üzenetet.." name="msg" required></textarea>
+      
+          <button type="submit" class="btn">Küldés</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Bezárás</button>
+        </form>
+      </div>  
+
+<script>function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }</script>
+  
+    <div class="toast" data-autohide="false">
+      <div class="toast-header">
+        <strong class="mr-auto text-primary">Toast Header</strong>
+        <small class="text-muted">5 perce</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+      </div>
+      <div class="toast-body">
+        HELLO:3
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  $(document).ready(function(){
+    $('.toast').toast('show');
+  });
+  </script>
+
+</body>
+
+</html>
